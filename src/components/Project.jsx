@@ -3,15 +3,14 @@ import firstproject from '../assets/firstproject.mp4';
 
 const Project = () => {
   return (
-      <div id='project' className='w-screen h-full mt-32 font-fontTwo'>
-      <div className="flex justify-center ">
-          <div className="font-bold text-center text-4xl ">Education</div>
+      <section id='project' className='h-[100%] mt-32 font-fontTwo'>
+      <div className="font-bold text-4xl text-center">
+          Project
         </div>
-        <div className='flex justify-center items-center'>
+        <div className='flex justify-center items-center mt-12'>
         <FirstProject />
         <SecondProject /></div>
-      </div>
-    
+      </section>
   )
 }
 
@@ -20,7 +19,7 @@ function FirstProject() {
   return (
     <>
       <button
-        className="bg-black text-[#F5DEB3] active:bg-black font-fontTwo uppercase  px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+        className="bg-[#F5DEB3] text-black active:bg-black font-fontTwo uppercase  px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
         type="button"
         onClick={() => setShowProject(true)}
       >
@@ -33,7 +32,7 @@ function FirstProject() {
           >
             <div className="relative w-auto my-6 mx-auto max-w-sm  bg-white bg-opacity-30 backdrop-blur rounded-xl">
               {/*content*/}
-              <div className="w-[100%]">
+              <div className="">
                 {/*header*/}
                 <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
                   <h3 className="text-3xl">
@@ -90,7 +89,7 @@ function SecondProject() {
   return (
     <>
       <button
-        className="bg-black text-[#F5DEB3] active:bg-black font-fontTwo uppercase  px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+        className="bg-[#F5DEB3] text-black active:bg-black font-fontTwo uppercase  px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
         type="button"
         onClick={() => setShowProject(true)}
       >
@@ -143,10 +142,5 @@ function SecondProject() {
     </>
   );
 }
-
-
-
-
-
 
 export default Project

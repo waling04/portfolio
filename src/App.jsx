@@ -10,10 +10,11 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <div className="bg-[#FAEBD7]">
-        <div id="home" className=" w-screen h-screen flex">
-          <div className="w-[96%]">
+  <>
+    <main className="w-[100%] flex"> 
+      <div className="bg-[#FAEBD7] w-[95%] h-[100%]">
+        <div id="home" className="h-screen flex">
+          <div className="w-[95%]">
             <div className="flex justify-center items-center mt-32">
               <h1 className="font-fontOne text-9xl">
                 HELLO,
@@ -28,12 +29,13 @@ function App() {
             </div>
           </div>
         </div>
-        <About />
+        <About/>
         <Project />
+        <Contact />
       </div>
-      <div>
-        <Navbar />
-      </div>
+      <nav><Navbar/></nav>
+    </main>
+    <footer className="bg-black text-[#FAEBD7] font-fontTwo text-center h-[30px]"> Copyright © 2023 waling04</footer>
     </>
   );
 }

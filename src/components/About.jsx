@@ -13,17 +13,21 @@ import git from "../assets/git.svg";
 import github from "../assets/github.svg";
 import mongodb from "../assets/mongodb.svg"
 import node from "../assets/node.svg"
+import bootstrap from "../assets/bootstrap.svg"
+import tailwind from "../assets/tailwind.svg"
 import postman from "../assets/postman.svg"
 import silpakorn from "../assets/silpakorn.png"
-import Navbar from "./Navbar"
-
+import { FaCircleInfo } from "react-icons/fa6";
 
 const About = () => {
   return (
-    <div
+    <section
       id="about" data-aos="fade-up" data-aos-duration="3000"
-      className="w-screen h-full scroll-smooth flex flex-col justify-center items-center">
-      <div className="border border-black rounded-lg p-16 w-[50%] bg-orange-100 mt-12">
+      className="h-[100%] scroll-smooth flex flex-col justify-center items-center">
+        <div className="font-bold text-4xl mt-20 mb-4">
+          <FaCircleInfo />
+        </div>
+      <div className="rounded-xl shadow-lg p-16 w-[50%] bg-orange-100 shadow-2xl ">
         <div className="font-fontTwo">
           I am a graduate of Generation's Junior Software Developer Bootcamp.
           Who is an expert on React.JS and a frontend that can handle HTML, CSS,
@@ -34,12 +38,11 @@ const About = () => {
         </div>
       </div>
       <br />
-      <div className="w-[100%] mt-16 font-fontTwo">
+      <div className="mt-16 font-fontTwo">
        <Skills /> 
        <Education />
-        
       </div>
-    </div>
+    </section>
   );
 };
 
@@ -58,13 +61,15 @@ const Skills = () => {
       <img src={JavaScript} alt="javascript logo" className="m-4"data-aos="flip-left" data-aos-duration="1000"/>
       <img src={react} alt="react logo" className="m-4" data-aos="flip-left" data-aos-duration="1000"/>
       <img src={figma} alt="figma logo" className="m-4" data-aos="flip-left" data-aos-duration="1000"/>
+      <img src={bootstrap} alt="bootstrap logo" width="80px" className="m-4" data-aos="flip-left" data-aos-duration="1000"/>
     </div>
     <div className="flex mb-12">
+    <img src={tailwind} alt="tailwind logo" className="m-2" width="80px" data-aos="flip-right" data-aos-duration="2000"/>
       <img src={git} alt="git logo" className="m-2" data-aos="flip-right" data-aos-duration="2000"/>
       <img src={github} alt="github logo" className="m-2" data-aos="flip-right" data-aos-duration="2000"/>
-      <img src={node} alt="github logo" className="m-2 " width="90px" data-aos="flip-right" data-aos-duration="2000"/>
-      <img src={mongodb} alt="github logo" className="m-2" width="90px" data-aos="flip-right" data-aos-duration="2000"/>
-      <img src={postman} alt="github logo" className="m-2" width="65px" data-aos="flip-right" data-aos-duration="2000"/>
+      <img src={node} alt="node logo" className="m-2 " width="90px" data-aos="flip-right" data-aos-duration="2000"/>
+      <img src={mongodb} alt="mongodb logo" className="m-2" width="90px" data-aos="flip-right" data-aos-duration="2000"/>
+      <img src={postman} alt="postman logo" className="m-2" width="65px" data-aos="flip-right" data-aos-duration="2000"/>
     </div>
     </div>
     
@@ -75,7 +80,7 @@ const Skills = () => {
 const Education = () => {
   return (
     <>
-      <div>
+      <div className="mt-20">
         <div className="flex justify-center">
           <div className="font-bold text-center text-4xl">Education</div>
         </div>
