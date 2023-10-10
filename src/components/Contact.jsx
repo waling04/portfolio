@@ -19,15 +19,15 @@ const Form = () => {
 
   return (
     <>
-      <div class="border border-black w-[35%] rounded">
+      <div class="border border-black w-[35%] rounded bg-[#F5DEB3]">
         <div class="p-4">
-          <form id="contact_form" name="submit-to-google-sheet" action="https://getform.io/f/a55https://getform.io/f/a55b9a44-2cf5-45b9-a06f-938a793a3f55b9a44-2cf5-45b9-a06f-938a793a3f55" method="POST">
+          <form action="https://getform.io/f/a55b9a44-2cf5-45b9-a06f-938a793a3f55" method="POST">
             <div class="mb-4">
-              <label for="message" class="block text-sm text-black">
+              <label for="message" class="block text-sm text-black" name="Message">
                 Message:
               </label>
               <textarea
-                class="w-full rounded bg-gray-300 p-4"
+                class="w-full rounded bg-slate-300 p-4"
                 name="Message"
                 id="message"
                 rows="6"
@@ -36,22 +36,22 @@ const Form = () => {
             </div>
             <div class="flex mb-5">
               <div class="w-1/2 mr-2">
-                <label for="name" class="block text-sm text-black">
+                <label for="name" class="block text-sm text-black" name="Name">
                   Your Name:
                 </label>
                 <input
-                  class="rounded w-full bg-gray-300 py-2 p-2"
+                  class="rounded w-full bg-slate-300 py-2 p-2"
                   type="text"
                   name="Name"
                   id="name"
                 />
               </div>
               <div class="w-1/2">
-                <label for="email" class="block text-sm text-black">
+                <label for="email" class="block text-sm text-black" name="Email">
                   Email Address:
                 </label>
                 <input
-                  class="rounded  w-full bg-gray-300 py-2 p-2"
+                  class="rounded  w-full bg-slate-300 py-2 p-2"
                   type="email"
                   name="Email"
                   id="email"
@@ -66,7 +66,7 @@ const Form = () => {
                 Send
               </button>
             </div>
-          </form>
+            </form>
         </div>
       </div>
     </>
