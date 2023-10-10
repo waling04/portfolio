@@ -11,7 +11,7 @@ function App() {
 
   return (
   <>
-    <main className="w-[100%] flex"> 
+    <main className="w-[100%] flex scroll-behavior:smooth;"> 
       <div className="bg-[#FAEBD7] w-[95%] h-[100%]">
         <div id="home" className="h-screen flex">
           <div className="w-[95%]">
