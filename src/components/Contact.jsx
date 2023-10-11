@@ -1,14 +1,13 @@
-import React, {useState} from "react";
+import React from "react";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
-
 
 const Contact = () => {
   return (
     <section id="contact" className="h-[100%] mt-32 font-fontTwo">
       <div className="font-bold text-4xl text-center">Contact</div>
       <div className="flex justify-center items-center mt-12">
-        <Form /> 
+        <Form />
       </div>
       <Social />
     </section>
@@ -16,14 +15,20 @@ const Contact = () => {
 };
 
 const Form = () => {
-
   return (
     <>
-      <div class="border border-black w-[35%] rounded bg-[#F5DEB3]">
+      <div class="border border-black md:w-[35%] w-[70%] rounded bg-[#F5DEB3]">
         <div class="p-4">
-          <form action="https://getform.io/f/a55b9a44-2cf5-45b9-a06f-938a793a3f55" method="POST">
+          <form
+            action="https://getform.io/f/a55b9a44-2cf5-45b9-a06f-938a793a3f55"
+            method="POST"
+          >
             <div class="mb-4">
-              <label for="message" class="block text-sm text-black" name="Message">
+              <label
+                for="message"
+                class="block text-sm text-black"
+                name="Message"
+              >
                 Message:
               </label>
               <textarea
@@ -36,7 +41,11 @@ const Form = () => {
             </div>
             <div class="flex mb-5">
               <div class="w-1/2 mr-2">
-                <label for="name" class="block text-sm text-black" name="Name">
+                <label
+                  for="name"
+                  class="block md:text-sm text-[18px] text-black"
+                  name="Name"
+                >
                   Your Name:
                 </label>
                 <input
@@ -47,7 +56,11 @@ const Form = () => {
                 />
               </div>
               <div class="w-1/2">
-                <label for="email" class="block text-sm text-black" name="Email">
+                <label
+                  for="email"
+                  class="block md:text-sm text-[18px] text-black"
+                  name="Email"
+                >
                   Email Address:
                 </label>
                 <input
@@ -66,7 +79,7 @@ const Form = () => {
                 Send
               </button>
             </div>
-            </form>
+          </form>
         </div>
       </div>
     </>

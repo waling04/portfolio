@@ -26,13 +26,13 @@ const About = () => {
       id="about"
       data-aos="fade-up"
       data-aos-duration="3000"
-      className="h-[100%] mt-20 mb-4"
+      className="h-full md:mt-20 mb-4"
     >
-      <div className="font-bold text-4xl flex w-[75%] justify-end mb-2 animate-bounce">
+      <div className="hidden md:block font-bold text-4xl md:flex w-[75%] justify-end mb-2 animate-bounce ">
         <FaCircleInfo />
       </div>
       <div className="flex flex-col justify-center items-center">
-        <div className="rounded-xl shadow-lg p-16 w-[50%] bg-[#F5DEB3] shadow-2xl ">
+        <div className="rounded-xl shadow-lg p-16 md:w-[50%] w-[80%] bg-[#F5DEB3] shadow-2xl">
           <div className="font-fontTwo">
             I am a graduate of Generation's Junior Software Developer Bootcamp.
             Who is an expert on React.JS and a frontend that can handle HTML,
@@ -43,7 +43,7 @@ const About = () => {
           </div>
         </div>
         <br />
-        <div className="mt-6 ml-[520px]">
+        <div className="mt-12 md:ml-[520px] md:mt-6 ">
           <button class="bg-gray-300 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
             <svg
               class="fill-current w-4 h-4 mr-2"
@@ -79,43 +79,42 @@ const Skills = () => {
           <img
             src={html5}
             alt="html logo"
-            className="m-4"
+            className="m-4 md:w-[60px] w-[50px]"
             data-aos="flip-left"
             data-aos-duration="1000"
           />
           <img
             src={css3}
             alt=" css3 logo"
-            className="m-4"
+            className="m-4 md:w-[60px] w-[50px]"
             data-aos="flip-left"
             data-aos-duration="1000"
           />
           <img
             src={JavaScript}
             alt="javascript logo"
-            className="m-4"
+            className="m-4 md:w-[60px] w-[50px]"
             data-aos="flip-left"
             data-aos-duration="1000"
           />
           <img
             src={react}
             alt="react logo"
-            className="m-4"
+            className="m-4 md:w-[60px] w-[50px]"
             data-aos="flip-left"
             data-aos-duration="1000"
           />
           <img
             src={figma}
             alt="figma logo"
-            className="m-4"
+            className="m-4 md:w-[60px] w-[50px]"
             data-aos="flip-left"
             data-aos-duration="1000"
           />
           <img
             src={bootstrap}
             alt="bootstrap logo"
-            width="80px"
-            className="m-4"
+            className="m-4 md:w-[80px] w-[50px]"
             data-aos="flip-left"
             data-aos-duration="1000"
           />
@@ -124,46 +123,42 @@ const Skills = () => {
           <img
             src={tailwind}
             alt="tailwind logo"
-            className="m-2"
-            width="80px"
+            className="m-2 md:w-[60px] w-[50px]"
             data-aos="flip-right"
             data-aos-duration="2000"
           />
           <img
             src={git}
             alt="git logo"
-            className="m-2"
+            className="m-2 md:w-[60px] w-[50px]"
             data-aos="flip-right"
             data-aos-duration="2000"
           />
           <img
             src={github}
             alt="github logo"
-            className="m-2"
+            className="m-2 md:w-[60px] w-[50px]"
             data-aos="flip-right"
             data-aos-duration="2000"
           />
           <img
             src={node}
             alt="node logo"
-            className="m-2 "
-            width="90px"
+            className="m-2 md:w-[60px] w-[50px]"
             data-aos="flip-right"
             data-aos-duration="2000"
           />
           <img
             src={mongodb}
             alt="mongodb logo"
-            className="m-2"
-            width="90px"
+            className="m-2 md:w-[60px] w-[50px]"
             data-aos="flip-right"
             data-aos-duration="2000"
           />
           <img
             src={postman}
             alt="postman logo"
-            className="m-2"
-            width="65px"
+            className="m-2 md:w-[60px] w-[50px]"
             data-aos="flip-right"
             data-aos-duration="2000"
           />
@@ -177,16 +172,19 @@ const Education = () => {
   return (
     <>
       <div className="mt-20">
-        <div className="flex justify-center">
+        <div className="md:flex justify-center">
           <div className="font-bold text-center text-4xl">Education</div>
         </div>
         <div className="flex justify-end mr-64">
-          <img src={coding} alt="coding" width="200px" />
+          <img
+            src={coding}
+            alt="coding"
+            className="md:w-[200px] w-[180px] mt-12"
+          />
         </div>
         <div className="flex flex-col justify-center ">
           <Generation />
           <Silpakorn />
-          {/* <Bp /> */}
         </div>
       </div>
     </>
@@ -199,7 +197,7 @@ const Generation = () => {
       <div
         data-aos="fade-up-right"
         data-aos-duration="2000"
-        className=" rounded-lg p-8 bg-[#F5DEB3]	flex w-[40%] items-center "
+        className=" rounded-lg p-8 bg-[#F5DEB3]	flex md:w-[40%] w-[90%] items-center mt-8 md:mt-0"
       >
         <div className="w-[75%]">
           Generation Thailand
@@ -225,11 +223,11 @@ const Generation = () => {
 
 const Silpakorn = () => {
   return (
-    <div className="flex justify-end mr-44">
+    <div className="flex justify-end mr-44 mt-16">
       <div
         data-aos="fade-up-left"
         data-aos-duration="3000"
-        className=" w-[35%] rounded-lg p-8 bg-[#F5DEB3]	flex items-center"
+        className=" md:w-[35%] w-[95%] rounded-lg p-8 bg-[#F5DEB3] flex items-center"
       >
         <div className="flex">
           <div className="w-[100%]">
@@ -238,7 +236,7 @@ const Silpakorn = () => {
             Bachelor of Arts, Faculty of Archeology in Thai major (Second -
             Class honors)
           </div>
-          <div className="w-[45%]">
+          <div className="w-[60%]">
             <img
               src={silpakorn}
               alt="generation thailand logo"
@@ -252,23 +250,6 @@ const Silpakorn = () => {
     </div>
   );
 };
-
-// const Bp = () => {
-//   return (
-//     <div className="flex justify-start ml-40">
-//     <div
-//       data-aos="fade-up-right"
-//       data-aos-duration="4000"
-//       className=" w-[30%] rounded-lg p-8 bg-[#F5DEB3] flex justify-center items-center"
-//     >
-//       <div className="w-[100%]">
-//       Buriram Phittayakhom School
-//       <div className="italic"> 2012 - 2014 </div>
-//       Mathematics-Science program
-//     </div>
-//     </div></div>
-//   );
-// };
 
 AOS.init();
 export default About;
