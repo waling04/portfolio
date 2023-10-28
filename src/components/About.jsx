@@ -19,6 +19,7 @@ import postman from "../assets/postman.svg";
 import silpakorn from "../assets/silpakorn.png";
 import { FaCircleInfo } from "react-icons/fa6";
 import Thanwarat from "../assets/Thanwarat.pdf";
+import ThanwaratCV from '../assets/ThanwaratCV.pdf'
 
 const About = () => {
   return (
@@ -34,12 +35,7 @@ const About = () => {
       <div className="flex flex-col justify-center items-center">
         <div className="rounded-xl shadow-lg p-16 md:w-[50%] w-[80%] bg-[#F5DEB3] shadow-2xl">
           <div className="font-fontTwo">
-            I am a graduate of Generation's Junior Software Developer Bootcamp.
-            Who is an expert on React.JS and a frontend that can handle HTML,
-            CSS, JavaScript, and Node.js As a person who is passionate about
-            development and technically skilled, with dedication, effort, and a
-            willingness to learn from every experience, I can continually
-            improve and achieve my goals.
+          I am a graduate of Generation's Junior Software Developer Bootcamp with a strong passion for web development. I have a solid foundation in React.js and frontend technologies, including HTML, CSS, JavaScript, and Node.js. I am dedicated, highly motivated, and eager to continue learning and improving my skills. I'm excited about the opportunities ahead in my development journey.
           </div>
         </div>
         <br />
@@ -53,7 +49,7 @@ const About = () => {
               <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
             </svg>
             <span>
-              <a href={Thanwarat} download className="">
+              <a href={ThanwaratCV} download >
                 Download CV
               </a>
             </span>

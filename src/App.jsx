@@ -12,7 +12,7 @@ function App() {
       {/* desktop */}
       <main className="hidden md:flex w-[100%] scroll-behavior:smooth;">
         <div className="bg-[#FAEBD7] w-[95%] h-full">
-          <div id="home" className="flex">
+          <div id="home" className="flex h-screen">
             <div className="w-[95%]">
               <div className="flex justify-center items-center mt-32">
                 <h1 className="font-fontOne text-9xl">
@@ -24,7 +24,7 @@ function App() {
                 </h1>
               </div>
               <div className="flex justify-end w-[80%] font-fontTwo text-4xl mt-4">
-                <h2>A FRONTEND DEVELOPER</h2>
+                <h2>A SOFTWARE DEVELOPER</h2>
               </div>
             </div>
           </div>
